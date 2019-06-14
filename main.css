@@ -1,0 +1,20 @@
+body {
+    background: black;
+    color: mediumslateblue;
+}
+
+#task {
+    width: 260px;
+    height: 25px;
+    border: none;
+    background: black;
+    color: mediumslateblue;
+    border: solid;
+}
+#submit {
+    background: mediumslateblue;
+    border: none;
+    width: 268px;
+    height: 25px;
+    border: none;
+}
