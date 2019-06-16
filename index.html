@@ -1,15 +1,16 @@
 <!DOCTYPE html>
+<meta charset="utf-8">
 
 <head>
     <title>To-Do</title>
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <div>
-        <input type="text" placeholder="Enter task here" id="task"><br/>
-        <input type="button" value="submit" id="submit" onclick="add__task()"> 
+    <div id="my__app">
+        <input type="text" placeholder="Enter task here" id="task"  onkeyup="add__task__key()"><br/>
+        <input type="button" value="submit" id="submit" onclick="add__task__click()"> 
         <h1>Andrews To Do list</h1>
-        <ul id="todo">
+        <ul id="todo" onclick="remove__task();">
         </ul>
     </div>  
     <script src="index.js"></script> 
