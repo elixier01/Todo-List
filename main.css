@@ -3,6 +3,17 @@ body {
     color: mediumslateblue;
 }
 
+h1 {
+    font-size: 40px;
+}
+
+#my__app {
+    border: 1px solid white;
+    padding: 5px;
+    margin: 5px;
+    width: 90vw;
+    height: 90vh;
+}
 #task {
     width: 260px;
     height: 25px;
@@ -17,4 +28,12 @@ body {
     width: 268px;
     height: 25px;
     border: none;
+}
+
+#created__todo {
+    color: white;
+    font-size: 25px;
+}
+#created__todo:hover {
+    color: darkred;
 }
