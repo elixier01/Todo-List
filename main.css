@@ -1,39 +1,60 @@
 body {
-    background: black;
-    color: mediumslateblue;
+    background: rgb(24, 24, 24);
+    color: white;
+    margin-top: 25px
 }
 
 h1 {
     font-size: 40px;
 }
 
-#my__app {
-    border: 1px solid white;
-    padding: 5px;
-    margin: 5px;
-    width: 90vw;
-    height: 90vh;
+#wrapper {
+    background-color: darkslateblue;
+    border-radius: 2.5%;
+    margin: auto;
+    width: 400px;
+    height: 600px;
 }
+
+#title {
+    display: block;
+    text-align: center;
+    margin: auto;
+    padding: 15px;
+    text-decoration: underline;
+}
+
 #task {
-    width: 260px;
-    height: 25px;
+    width: 100%;
+    height: 35px;
     border: none;
-    background: black;
-    color: mediumslateblue;
-    border: solid;
+    background: mediumturquoise;
+    color: mediumslateblue(155, 139, 248);
+    margin: auto;
+    font-size: 1.5em;
+    color: darkmagenta;
+    text-align: center;
+    padding: 0;
 }
 #submit {
     background: mediumslateblue;
+    color: white;
     border: none;
-    width: 268px;
-    height: 25px;
+    width: 100%;
+    height: 35px;
     border: none;
+    margin: auto;
+    font-size: 1.5em;
+    font-weight: 1000;
 }
 
 #created__todo {
     color: white;
-    font-size: 25px;
+    font-size: 1.5em;
+    list-style: none;
+    text-align: auto;
 }
 #created__todo:hover {
-    color: darkred;
+    color: red;
+    text-decoration: line-through;
 }
