@@ -1,6 +1,11 @@
 var todo__input = document.getElementById("task");
+document.getElementById("submit").addEventListener("click", addByClick);
+document.getElementById("todo").addEventListener("click", removeTask);
+document.addEventListener("keydown", event => {
+  event.keyCode === 13 ? addByKey : null;
+})
 
-function add__task__click() {
+function addByClick() {
   var new__todo = document.createElement("li");
   new__todo.setAttribute("id", "created__todo");
   if (todo__input.value !== "") {
@@ -11,7 +16,7 @@ function add__task__click() {
   todo__input.focus();
 }
 
-function add__task__key() {
+function addByKey() {
   if (event.keyCode === 13) {
     var new__todo = document.createElement("li");
     new__todo.setAttribute("id", "created__todo");
@@ -24,8 +29,9 @@ function add__task__key() {
   }
 }
 
-function remove__task() {
-  var remove__todo = document.getElementById("created__todo");
-  remove__todo.remove(this);created__todo
+function removeTask() {
+  event.target.remove();
   todo__input.focus();
 }
+
+document.addEventListener("keydown", addByKey);
